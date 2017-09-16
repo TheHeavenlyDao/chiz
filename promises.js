@@ -3,7 +3,7 @@ const file = "./file";
 
 // you can skip creating the promise if it already exists
 // #Begin
-var read = function(file) {
+function read(file) {
 	return new Promise(function(resolve, reject) {
 		fs.readFile(file, "utf8", function(error, data) {
 			if (error) reject(error);
